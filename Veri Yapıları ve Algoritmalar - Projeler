@@ -1,0 +1,98 @@
+Proje 1
+
+Soru 1
+[22,27,16,2,18,6] -> Insertion Sort
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+
+1-Başlangıç Durumu:
+[22, 27, 16, 2, 18, 6]
+2-İkinci elemanı sıralı bölüme ekleme:
+[22, 27] -> [16, 2, 18, 6]
+3-Üçüncü elemanı sıralı bölüme ekleme:
+[16, 22, 27] -> [2, 18, 6]
+4-Dördüncü elemanı sıralı bölüme ekleme:
+[2, 16, 22, 27] -> [18, 6]
+5-Beşinci elemanı sıralı bölüme ekleme:
+[2, 16, 18, 22, 27] -> [6]
+6-Altıncı elemanı sıralı bölüme ekleme:
+[2, 6, 16, 18, 22, 27]
+
+Big-O -> O(n^2)
+
+Soru 1.1
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+1.Average case: Aradığımız sayının ortada olması
+2.Worst case: Aradığımız sayının sonda olması
+3.Best case: Aradığımız sayının dizinin en başında olması.
+
+Cevap 1.1 -> Average case. Çünkü 18 ortada.
+
+Soru 2
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+Cevap 2->
+Adım 1
+[2,3,5,8,7,9,4,15,6]
+Adım 2
+[2,3,5,8,7,9,4,15,6]
+Adım 3
+[2,3,4,8,7,9,5,15,6]
+Adım 4
+[2,3,4,5,7,9,8,15,6]
+
+
+Proje 2
+
+[16,21,11,8,12,22] -> Merge Sort
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+
+Adım 1
+[16,21,11]  [8,12,22]
+Adım 2
+[16,21] [11] [8,12] [22]
+Adım 3
+[16] [21] [11] [8] [12] [22]
+Adım 4
+[16,21] [11] [8,12] [22]
+Adım 5
+[16,21,11] [8,12,22]
+Adım 6
+[11,16,21] [8,12,22]
+Adım 7
+[8,16,21] [11,12,22]
+Adım 8
+[8,11,21] [16,12,22]
+Adım 9
+[8,11,12] [16,21,22]
+Adım 10
+[8,11,12,16,21,22]
+
+Big-O gösterimini yazınız.
+
+Cevap -> O(nlogn)
+
+Proje 3
+
+7 root'tur.
+
+5, root'un sağından gelir. (7'in sağında)
+1, root'un solundan gelir. (7'in solunda)
+8, root'un sağından gelir. (7'in sağında)
+3, 5'in solundan gelir. (5'in solunda)
+6, 5'in sağından gelir. (5'in sağında)
+0, 1'in solundan gelir. (1'in solunda)
+9, 8'in sağından gelir. (8'in sağında)
+4, 3'ün sağından gelir. (3'ün sağında)
+2, 1'in sağından gelir. (1'in sağında)
+
+        7
+       / \
+      5   8
+     / \   \
+    1   6   9
+   / \     /
+  0   3   4
+     /
+    2
